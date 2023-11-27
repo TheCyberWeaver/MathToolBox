@@ -24,6 +24,9 @@ from . style import *
 class PyTabWidget(QTabWidget):
     def __init__(
         self,
+        bg_color_hover,
+        bg_color_pressed,
+
         radius = 8,
         color = "#FFF",
         bg_color = "#444",
@@ -35,6 +38,8 @@ class PyTabWidget(QTabWidget):
         scroll_bar_bg_color = "#FFF",
         scroll_bar_btn_color = "#3333",
         context_color = "#00ABE8"
+
+
     ):
         super().__init__()
 
@@ -52,7 +57,9 @@ class PyTabWidget(QTabWidget):
             grid_line_color,
             scroll_bar_bg_color,
             scroll_bar_btn_color,
-            context_color
+            context_color,
+            bg_color_hover,
+            bg_color_pressed
         )
 
     # SET STYLESHEET
@@ -68,7 +75,9 @@ class PyTabWidget(QTabWidget):
         grid_line_color,
         scroll_bar_bg_color,
         scroll_bar_btn_color,
-        context_color
+        context_color,
+        bg_color_hover,
+        bg_color_pressed
     ):
         # APPLY STYLESHEET
         style_format = style.format(
@@ -82,6 +91,8 @@ class PyTabWidget(QTabWidget):
             _grid_line_color = grid_line_color,
             _scroll_bar_bg_color = scroll_bar_bg_color,
             _scroll_bar_btn_color = scroll_bar_btn_color,
-            _context_color = context_color
+            _context_color = context_color,
+            _bg_color_hover=bg_color_hover,
+            _bg_color_pressed=bg_color_pressed
         )
         self.setStyleSheet(style_format)

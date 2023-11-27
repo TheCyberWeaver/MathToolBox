@@ -77,3 +77,5 @@ from . py_icon_link import PyIconLink
 # PY WALLET BUTTON
 # ///////////////////////////////////////////////////////////////
 from . py_wallet_button import PyWalletButton
+
+from . py_fach import PyFach

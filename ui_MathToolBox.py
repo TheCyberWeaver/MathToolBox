@@ -145,4 +145,3 @@ class Ui_Form(object):
         self.label_2.setText(QCoreApplication.translate("Form", u"Signal Visualizatioin", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("Form", u"Tab 2", None))
     # retranslateUi
-

@@ -14,4 +14,4 @@
 
 # PY SLIDER
 # ///////////////////////////////////////////////////////////////
-from . py_slider import PySlider
+from . py_tab import PyTabWidget
